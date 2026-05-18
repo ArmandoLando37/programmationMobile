@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Clique ici pour continuer</string>
+    <string name="previous">Clique ici pour revenir en arrière</string>
+
+    <string name="lorem_ipsum">
+    Bonjour, je suis Armando
+    </string>
+</resources>

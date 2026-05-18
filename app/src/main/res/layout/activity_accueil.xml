@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/fond">
+
+    <!-- message de bienvenue -->
+    <TextView
+        android:id="@+id/textViewBienvenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Bienvenu"
+        android:textColor="@color/texte_principal"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- email de l'user -->
+    <TextView
+        android:id="@+id/textViewEmailUtilisateur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text=""
+        android:textColor="@color/texte_secondaire"
+        android:textSize="16sp" />
+
+    <!-- bouton revenir -->
+    <Button
+        android:id="@+id/boutonRevenir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/rouge"
+        android:text="Revenir a la connexion"
+        android:textColor="@color/blanc" />
+
+</LinearLayout>

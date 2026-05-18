@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- logo sary -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <!-- titre -->
+        <TextView
+            android:id="@+id/textViewTitre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Connexion"
+            android:textColor="@color/texte_principal"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- champ mon nom " Armando Lando "-->
+        <EditText
+            android:id="@+id/champNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Armando Landos"
+            android:textColor="@color/texte_principal"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:background="@drawable/fond_champ" />
+
+        <!-- champ classe -->
+        <EditText
+            android:id="@+id/champClasse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="GL L3"
+            android:textColor="@color/texte_secondaire"
+            android:padding="12dp"
+            android:background="@drawable/fond_champ" />
+
+        <!-- champ email -->
+        <EditText
+            android:id="@+id/champEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:hint="Adresse email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/texte_principal"
+            android:textColorHint="@color/texte_secondaire"
+            android:background="@drawable/fond_champ" />
+
+        <!-- erreur email -->
+        <TextView
+            android:id="@+id/textViewErreurEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text=""
+            android:textColor="@color/rouge"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+
+        <!-- Champ password -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <EditText
+                android:id="@+id/champMotDePasse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mot de passe"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:paddingEnd="48dp"
+                android:textColor="@color/texte_principal"
+                android:textColorHint="@color/texte_secondaire"
+                android:background="@drawable/fond_champ" />
+
+            <Button
+                android:id="@+id/boutonVoirMdp"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="2dp"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Voir"
+                android:textColor="@color/texte_secondaire"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:padding="4dp" />
+        </FrameLayout>
+
+        <!-- erreur mot de passe -->
+        <TextView
+            android:id="@+id/textViewErreurMdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text=""
+            android:textColor="@color/rouge"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+
+        <!-- checkbox "Se souvenir de moi" -->
+        <CheckBox
+            android:id="@+id/checkboxSeSouvenir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Se souvenir de moi"
+            android:textColor="@color/texte_principal" />
+
+        <!-- affichage en temps reel -->
+        <TextView
+            android:id="@+id/textViewAffichageDynamique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Vous saisissez : "
+            android:textColor="@color/texte_secondaire"
+            android:textSize="13sp" />
+
+        <!-- compteur de tentative -->
+        <TextView
+            android:id="@+id/textViewCompteurTentatives"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text=""
+            android:textColor="@color/rouge"
+            android:textSize="13sp" />
+
+        <!-- bouton "Se connecter" -->
+        <Button
+            android:id="@+id/boutonConnexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/gris"
+            android:text="Se connecter"
+            android:textColor="@color/blanc" />
+
+        <!-- bouton effacer -->
+        <Button
+            android:id="@+id/boutonEffacer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rouge"
+            android:text="Effacer"
+            android:textColor="@color/blanc" />
+
+    </LinearLayout>
+</ScrollView>
